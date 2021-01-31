@@ -54,7 +54,7 @@ namespace CardGame.Strategies.ConcreteStrategies
        
         public void CreateCardSetForGivenSuitType(string suitType)
         {
-            var suit = CardSuitFactory.GetCardSuit(suitType);
+            var suit = CardSuitFactory.CreateCardSuit(suitType);
 
             foreach (var cardtype in typeofCards)
             {

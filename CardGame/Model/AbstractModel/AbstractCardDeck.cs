@@ -20,7 +20,7 @@ namespace CardGame.Model.AbstractModel
             RemovedCards = new List<AbstractCard>();   
         }
 
-        public  void InitializeDeck(ICardDeckInitializer creditCardInitializer)
+        public virtual void InitializeDeck(ICardDeckInitializer creditCardInitializer)
         {
             Cards = creditCardInitializer.GetNewCards();
         }

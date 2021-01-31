@@ -12,7 +12,7 @@ namespace CardGame.Factory.ConcreteFactory
     public class CardSuitFactory : AbstractCardSuitFactory
     {
         //Concrete implementaion for Card Suit
-        public override AbstractSuit GetCardSuit(string name)
+        public override AbstractSuit CreateCardSuit(string name)
         {
             return new CardSuit(name);
         }

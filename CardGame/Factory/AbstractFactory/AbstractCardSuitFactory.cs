@@ -10,7 +10,7 @@ namespace CardGame.Factory.AbstractFactory
     //Abstract factory Pattern. Provides the interface for the Client to create Memory for the AbstractSuit
     public abstract class AbstractCardSuitFactory
     {
-       public  abstract AbstractSuit GetCardSuit(string name);
+       public  abstract AbstractSuit CreateCardSuit(string name);
 
     }
 }
